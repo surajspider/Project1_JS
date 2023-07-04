@@ -1,0 +1,727 @@
+body {
+    background-color: #3D087B;
+}
+
+@media only screen and (max-width:650px) {
+    .maincontainer {
+        padding: 30px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid black; */
+    }
+
+    .box1 {
+        /* border: 1px solid black; */
+        margin: auto;
+    }
+
+    .img-logoclock {
+        width: 170px;
+        height: 65px;
+    }
+
+    .box2 {
+        margin: 20px 0px 10px 0px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+        height: 110px;
+    }
+
+    .border1 {
+        border-radius: 5px;
+        background-color: white;
+        opacity: 0.7;
+        position: relative;
+        z-index: -1;
+        top: 0.5vh;
+        height: 20px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .border2 {
+        border-radius: 5px;
+        position: relative;
+        background-color: white;
+        opacity: 0.2;
+        z-index: -2;
+        height: 60px;
+        margin-top: -45px;
+        margin-left: 17%;
+        width: 60%;
+    }
+
+    .flextimebox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        /* border: 2px solid #3D087B; */
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .timelabel {
+        color: #3D087B;
+        /* display: inline-block; */
+        font-weight: bolder;
+        font-size: medium;
+        text-align: center;
+        margin-right: 5px;
+        margin-top: 50px;
+    }
+
+    .box2 p {
+        text-align: center;
+        font-size: large;
+        font-weight: bolder;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .box2 .semicolon {
+        margin-top: 50px;
+        padding: 0;
+        /* display: inline-block; */
+    }
+
+    .box2 .time {
+        /* display: inline-block; */
+        margin: 10px 0px 10px 0px;
+        padding: 0px 5px 10px 5px;
+        background-color: #F6E2FF;
+        color: #8A11BF;
+    }
+
+    .timeampm {
+        /* display: inline-block; */
+        margin: 10px 0px 10px 0px;
+        padding: 2px 5px 10px 5px;
+        border-radius: 5px;
+        color: white;
+        background: linear-gradient(to bottom, #CB52F8, #FC5EFF);
+    }
+
+    #ampm {
+        margin-top: 30px;
+    }
+
+    .box3 {
+        border: 2px dashed black;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin-top: 30px;
+        padding: 10px;
+    }
+
+    .textdisplay {
+
+        text-align: left;
+        font-size: x-large;
+        font-weight: bolder;
+        color: #8E53F0;
+        text-shadow: 2px 0px 4px #8E53F0;
+    }
+
+    .box4 {
+        margin-top: 20px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .img-logo {
+        width: 14px;
+        height: 14px;
+        display: inline-block;
+        position: relative;
+        top: 1.5vh;
+        /* padding-left: 20px; */
+        /* padding-bottom: 2vh; */
+    }
+
+    .vline {
+        border-left: 2px solid grey;
+        height: 4vh;
+        margin-left: 2.5vh;
+        margin-top: 2vh;
+        /* margin-bottom: 1vh; */
+    }
+
+    .label-timebox {
+        font-size: medium;
+        margin-left: 20px;
+        color: #3D087B;
+        width: 120px;
+        display: inline-block;
+    }
+
+    .selectbox {
+        height: 30px;
+        color: #3D087B;
+        border-radius: 5px;
+        border: 1px solid rgb(232, 230, 230);
+    }
+
+    .box5 {
+        margin-top: 20px;
+        /* margin-left: 9%; */
+    }
+
+    .box6 {
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+
+    .displaybox {
+        text-align: center;
+        font-size: large;
+        font-weight: bolder;
+        color: whitesmoke;
+    }
+
+    .box7 {
+        margin-top: 20px;
+    }
+
+    .button {
+        display: inline-block;
+        width: 36%;
+    }
+
+    .alarmbutton {
+        width: 100%;
+        /* margin-left: 8%; */
+        padding: 7px;
+        font-size: large;
+        font-weight: bold;
+        border-radius: 5px;
+        border: 1px solid #3D087B;
+        color: whitesmoke;
+        background: linear-gradient(to right, #8E53F0, #FC5EFF);
+    }
+
+    .alarmbutton:hover {
+        background: linear-gradient(to left, #8E53F0, #FC5EFF);
+        cursor: pointer;
+    }
+
+    .alarmbutton:hover span {
+        display: none;
+    }
+
+    .alarmbutton:hover::before {
+        content: "Party time!";
+    }
+
+    .alarmdisplay {
+        /* margin-top: 20px; */
+        float: right;
+        background-color: rgba(245, 245, 245, 0.25);
+        border-radius: 5px;
+    }
+
+    .dtime {
+        margin: 0;
+        color: #F25CFE;
+        padding: 3px;
+    }
+
+}
+
+
+/*Media Query for Tablets*/
+
+@media only screen and (min-width:651px) and (max-width:950px) {
+    .maincontainer {
+        padding: 30px 10px 0px 10px;
+        display: flex;
+        flex-direction: column;
+        /* border: 2px solid black; */
+    }
+
+    .box1 {
+        /* border: 1px solid black; */
+        margin: auto;
+    }
+
+    .img-logoclock {
+        width: 170px;
+        height: 65px;
+    }
+
+    .box2 {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 10px;
+        position: relative;
+        height: 110px;
+        width: 70%;
+        margin: auto;
+    }
+
+    .border1 {
+        border-radius: 5px;
+        background-color: white;
+        opacity: 0.7;
+        position: relative;
+        z-index: -1;
+        top: 0.5vh;
+        height: 20px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .border2 {
+        border-radius: 5px;
+        position: relative;
+        background-color: white;
+        opacity: 0.2;
+        z-index: -2;
+        height: 60px;
+        margin-top: -45px;
+        margin-left: 17%;
+        width: 60%;
+    }
+
+    .flextimebox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        border: 2px solid #3D087B;
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .timelabel {
+        color: #3D087B;
+        /* display: inline-block; */
+        font-weight: bolder;
+        font-size: medium;
+        text-align: center;
+        margin-right: 5px;
+        margin-top: 50px;
+    }
+
+    .box2 p {
+        text-align: center;
+        font-size: large;
+        font-weight: bolder;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .box2 .semicolon {
+        margin-top: 50px;
+        padding: 0;
+        /* display: inline-block; */
+    }
+
+    .box2 .time {
+        /* display: inline-block; */
+        margin: 10px 0px 10px 0px;
+        padding: 0px 5px 10px 5px;
+        background-color: #F6E2FF;
+        color: #8A11BF;
+    }
+
+    .timeampm {
+        /* display: inline-block; */
+        margin: 10px 0px 10px 0px;
+        padding: 2px 5px 10px 5px;
+        border-radius: 5px;
+        color: white;
+        background: linear-gradient(to bottom, #CB52F8, #FC5EFF);
+    }
+
+    #ampm {
+        margin-top: 30px;
+    }
+
+    .box3 {
+        border: 2px dashed black;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 10px;
+        width: 90%;
+        margin-left: 3.5%;
+    }
+
+    .textdisplay {
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        color: #8E53F0;
+        text-shadow: 2px 0px 4px #8E53F0;
+    }
+
+    .box4 {
+        margin-top: 20px;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .img-logo {
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        position: relative;
+        top: 1.5vh;
+        /* padding-left: 20px; */
+        /* padding-bottom: 0.5vh; */
+    }
+
+    .vline {
+        border-left: 2px solid grey;
+        height: 4vh;
+        margin-left: 1.5vh;
+        margin-top: 2vh;
+        /* margin-bottom: 1vh; */
+    }
+
+    .label-timebox {
+        font-size: x-large;
+        margin-left: 20px;
+        color: #3D087B;
+        width: 300px;
+        display: inline-block;
+    }
+
+    .selectbox {
+        height: 30px;
+        color: #3D087B;
+        border-radius: 5px;
+        border: 1px solid rgb(232, 230, 230);
+        width: 30%;
+    }
+
+    .box5 {
+        margin-top: 20px;
+        /* margin-left: 9%; */
+    }
+
+    .box6 {
+        margin-top: 20px;
+        background-color: rgb(255, 255, 255, 0.3);
+        border-radius: 10px;
+    }
+
+    .displaybox {
+        text-align: center;
+        font-size: xx-large;
+        font-weight: bolder;
+        color: whitesmoke;
+    }
+
+    .box7 {
+        margin-top: 20px;
+    }
+
+    .button {
+        display: inline-block;
+        width: 50%;
+    }
+
+    .alarmbutton {
+        width: 100%;
+        float: left;
+        margin-top: 3%;
+        font-size: x-large;
+        font-weight: bolder;
+        border-radius: 5px;
+        border: 1px solid #3D087B;
+        color: whitesmoke;
+        background: linear-gradient(to right, #8E53F0, #FC5EFF);
+    }
+
+    .alarmbutton:hover {
+        background: linear-gradient(to left, #8E53F0, #FC5EFF);
+        cursor: pointer;
+    }
+
+    .alarmbutton:hover span {
+        display: none;
+    }
+
+    .alarmbutton:hover::before {
+        content: "Party time!";
+    }
+
+    .alarmdisplay {
+        float: right;
+        margin-top: 0;
+        width: 40%;
+        background-color: rgba(245, 245, 245, 0.25);
+        border-radius: 5px;
+    }
+
+    .dtime {
+        margin: 0;
+        color: #F25CFE;
+        padding: 3px;
+    }
+
+}
+
+/*Media query for laptops and desktops*/
+
+@media only screen and (min-width:951px) {
+    .maincontainer {
+        /* border: 2px solid black; */
+        padding: 30px;
+        position: relative;
+        height: 41em;
+    }
+
+    .box1 {
+        width: 34%;
+        /* border: 2px solid black; */
+        display: inline-block;
+        position: absolute;
+        left: 10%;
+    }
+
+    .img-logoclock {
+        width: 170px;
+        height: 65px;
+    }
+
+    .box2 {
+        width: 34%;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: whitesmoke;
+        display: inline-block;
+        padding: 10px;
+        position: absolute;
+        height: 110px;
+        left: 50%;
+    }
+
+    .border1 {
+        border-radius: 5px;
+        background-color: white;
+        opacity: 0.7;
+        position: relative;
+        z-index: -1;
+        top: 0.5vh;
+        height: 20px;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .border2 {
+        border-radius: 5px;
+        position: relative;
+        background-color: white;
+        opacity: 0.2;
+        z-index: -2;
+        height: 60px;
+        margin-top: -45px;
+        margin-left: 17%;
+        width: 60%;
+    }
+
+    .flextimebox {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+        /* border: 2px solid #3D087B; */
+        border-radius: 5px;
+        margin: auto;
+    }
+
+    .timelabel {
+        color: #3D087B;
+        /* display: inline-block; */
+        font-weight: bolder;
+        font-size: medium;
+        text-align: center;
+        margin-right: 5px;
+        margin-top: 50px;
+    }
+
+    .box2 p {
+        text-align: center;
+        font-size: large;
+        font-weight: bolder;
+        margin-bottom: 0;
+        margin-left: 0;
+    }
+
+    .box2 .semicolon {
+        margin-top: 50px;
+        padding: 0;
+        /* display: inline-block; */
+    }
+
+    .box2 .time {
+        /* display: inline-block; */
+        margin: 10px 0px 10px 0px;
+        padding: 0px 5px 10px 5px;
+        background-color: #F6E2FF;
+        color: #8A11BF;
+    }
+
+    .timeampm {
+        /* display: inline-block; */
+        margin: 10px 0px 10px 0px;
+        padding: 2px 5px 10px 5px;
+        border-radius: 5px;
+        color: white;
+        background: linear-gradient(to bottom, #CB52F8, #FC5EFF);
+    }
+
+    #ampm {
+        margin-top: 30px;
+    }
+
+    .box3 {
+        border: 2px dashed black;
+        background-color: whitesmoke;
+        border-radius: 10px;
+        position: absolute;
+        width: 34%;
+        top: 30%;
+        left: 50%;
+        padding: 0px 10px 0px 10px;
+        display: inline-block;
+    }
+
+    .textdisplay {
+        padding: 10px;
+        margin: 5px 10px 5px 10px;
+        text-align: left;
+        font-size: xx-large;
+        font-weight: bolder;
+        color: #8E53F0;
+        text-shadow: 2px 0px 4px #8E53F0;
+    }
+
+    .box4 {
+        background-color: whitesmoke;
+        border-radius: 10px;
+        padding: 20px;
+        width: 35%;
+        position: absolute;
+        top: 17%;
+        left: 10%;
+        box-sizing: border-box;
+    }
+
+    .img-logo {
+        width: 34px;
+        height: 34px;
+        display: inline-block;
+        position: relative;
+        top: 1.5vh;
+        /* padding-left: 20px; */
+        /* padding-bottom: 2vh; */
+    }
+
+    .vline {
+        border-left: 2px solid grey;
+        height: 4vh;
+        margin-left: 2.5vh;
+        margin-top: 2vh;
+        /* margin-bottom: 1vh; */
+    }
+
+    .label-timebox {
+        font-size: larger;
+        margin-left: 20px;
+        color: #3D087B;
+        width: 40%;
+        display: inline-block;
+    }
+
+    .selectbox {
+        height: 30px;
+        color: #3D087B;
+        width: 30%;
+        border-radius: 5px;
+        border: 1px solid rgb(232, 230, 230);
+    }
+
+    .box5 {
+        position: absolute;
+        top: 47%;
+        left: 50%;
+        width: 35%;
+    }
+
+    .box6 {
+        position: absolute;
+        background-color: rgb(255, 255, 255, 0.3);
+        border-radius: 10px;
+        width: 35%;
+        top: 69%;
+        left: 10%;
+    }
+
+    .box7 {
+        position: absolute;
+        width: 35%;
+        top: 83%;
+        left: 10%;
+    }
+
+    .button {
+        float: left;
+        width: 50%;
+        margin-right: 2%;
+    }
+
+    .displaybox {
+        text-align: center;
+        font-size: x-large;
+        font-weight: bolder;
+        color: whitesmoke;
+    }
+
+    .alarmbutton {
+        width: 100%;
+        font-size: x-large;
+        font-weight: bolder;
+        border-radius: 5px;
+        border: 1px solid #3D087B;
+        color: whitesmoke;
+        background: linear-gradient(to right, #8E53F0, #FC5EFF);
+    }
+
+    .alarmbutton:hover {
+        background: linear-gradient(to left, #8E53F0, #FC5EFF);
+        cursor: pointer;
+    }
+
+    .alarmbutton:hover span {
+        display: none;
+    }
+
+    .alarmbutton:hover::before {
+        content: "Party time!";
+    }
+
+    .alarmdisplay {
+        display: inline-block;
+        width: 47%;
+        background-color: rgba(245, 245, 245, 0.25);
+        border-radius: 5px;
+    }
+
+    .dtime {
+        margin: 0;
+        color: #F25CFE;
+        padding: 3px;
+    }
+
+
+
+}
