@@ -220,6 +220,7 @@ body {
     .alarmdisplay {
         /* margin-top: 20px; */
         float: right;
+        width: 63%;
         background-color: rgba(245, 245, 245, 0.25);
         border-radius: 5px;
     }
@@ -484,7 +485,7 @@ body {
         /* border: 2px solid black; */
         display: inline-block;
         position: absolute;
-        left: 10%;
+        left: 13%;
     }
 
     .img-logoclock {
@@ -502,6 +503,7 @@ body {
         position: absolute;
         height: 110px;
         left: 50%;
+        top: 6%;
     }
 
     .border1 {
@@ -589,15 +591,16 @@ body {
         border-radius: 10px;
         position: absolute;
         width: 34%;
-        top: 30%;
+        height: 13%;
+        top: 31%;
         left: 50%;
         padding: 0px 10px 0px 10px;
         display: inline-block;
     }
 
     .textdisplay {
-        padding: 10px;
-        margin: 5px 10px 5px 10px;
+        padding: 0px;
+        margin: 20px 10px 10px 10px;
         text-align: left;
         font-size: xx-large;
         font-weight: bolder;
@@ -612,7 +615,8 @@ body {
         width: 35%;
         position: absolute;
         top: 17%;
-        left: 10%;
+        left: 13%;
+        height: 50%;
         box-sizing: border-box;
     }
 
@@ -652,10 +656,11 @@ body {
 
     .box5 {
         position: absolute;
-        top: 47%;
+        top: 48%;
         left: 50%;
         width: 35%;
     }
+
 
     .box6 {
         position: absolute;
@@ -663,24 +668,27 @@ body {
         border-radius: 10px;
         width: 35%;
         top: 69%;
-        left: 10%;
+        left: 13%;
+        height: 12%;
     }
 
     .box7 {
         position: absolute;
         width: 35%;
         top: 83%;
-        left: 10%;
+        left: 13%;
     }
 
     .button {
         float: left;
-        width: 50%;
+        width: 40%;
         margin-right: 2%;
     }
 
     .displaybox {
         text-align: center;
+        padding: 0;
+        margin: 25px 0px 0px 0px;
         font-size: x-large;
         font-weight: bolder;
         color: whitesmoke;
@@ -711,7 +719,7 @@ body {
 
     .alarmdisplay {
         display: inline-block;
-        width: 47%;
+        width: 57%;
         background-color: rgba(245, 245, 245, 0.25);
         border-radius: 5px;
     }

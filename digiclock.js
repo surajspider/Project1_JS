@@ -7,6 +7,7 @@ function clock() {
     // hours = parseInt(hours);
     // minutes = parseInt(minutes);
     // seconds = parseInt(seconds);
+    // hours = 18;
     if (hours === 0) {
         hours = 12;
     }
